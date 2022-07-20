@@ -1,0 +1,123 @@
+/*null*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	background-color: #fff;
+	color: #6D6D6D;
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 18px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top; position: relative; z-index: 1;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+/* style */
+body{
+    background-color: #1b1b1b;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+    justify-content: center;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+.header__logo h1{
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+.main{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+.main__input{
+    display: flex;
+    justify-content: space-around;
+    width: 420px;
+}
+.input__num input{
+    max-width:100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.main__key{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 420px;
+}
+.key__btn button{
+    width: 40px;
+    height: 40px;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+.key__btn button:hover{
+    transition: all 0.3s;
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: rgba(113, 113, 113, 0.4);
+}
